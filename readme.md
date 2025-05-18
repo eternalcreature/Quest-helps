@@ -7,6 +7,39 @@ It automates:
 - Collecting friend codes of people active this month
 - Clicking calendar help links for each friend
 
+## ⚡ Quick Start
+
+1. **Install Python** (ask ChatGPT if unsure).
+
+2. **Open terminal** and run:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   playwright install
+   ```
+
+3. **Create `.env` file** with your KanoPlay login:
+
+   ```
+   KANO_EMAIL=your_email_here
+   KANO_PASSWORD=your_password_here
+   ```
+
+4. Run each script in order:
+
+   ```bash
+   python step_1_login.py
+   python step_2_get_mob_codes.py
+   python step_3_calendar_helps.py
+   ```
+
+5. Let the last script run; it will automate clicking calendar helps for your friends.
+
+---
+
+For full instructions and troubleshooting, see below.
+
+
 ## 🧰 What You’ll Need
 
 Before running the scripts, make sure you have:
