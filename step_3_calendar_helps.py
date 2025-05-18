@@ -57,7 +57,6 @@ async def visit_urls():
 
             # Use remove_listener instead of .off()
             page.remove_listener("response", on_response)
-        await asyncio.sleep(180)
         await context.close()
 
 
