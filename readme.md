@@ -32,7 +32,17 @@ Once Python is installed, follow these steps:
 python -m pip install -r requirements.txt
 ```
 
-### 3. Create a `.env` file in the main folder
+### 3. Install Playwright browser dependencies
+
+After installing the Python packages, run this command:
+
+```bash
+playwright install
+```
+
+> This downloads the browser engines Playwright uses to automate the browser (Chromium, Firefox, WebKit). Without this, the scripts won’t be able to open or control a browser.
+
+### 4. Create a `.env` file in the main folder
 
 This file stores your login credentials. Create a new file named `.env` and add the following (replace the text in brackets):
 
